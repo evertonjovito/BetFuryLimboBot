@@ -25,4 +25,4 @@ setInterval(function() {
   console.log(gain);
   console.log(loss);
 
-}, 5000);
+}, 5000);//5000ms = 5 seg
