@@ -1,6 +1,14 @@
 setInterval(function() {
 
-  var btn = document.querySelector(".btnBet");
-  btn.click();
+  var btnAposta = document.querySelector(".btnBet");
+  var btns = document.getElementsByClassName("amount__btn");
+  var btnMetade = btns[2];
+  var btns = document.getElementsByClassName("amount__btn");
+  var btnDuplicar = btns[3];
+
+
+  btnMetade.click();
+  btnDuplicar.click();
+  btnAposta.click();
   
-}, 1000);
+}, 5000);
