@@ -1,14 +1,28 @@
+//Botões
+var btnAposta = document.querySelector(".btnBet");
+var btns = document.getElementsByClassName("amount__btn");
+var btnMetade = btns[2];
+var btns = document.getElementsByClassName("amount__btn");
+var btnDuplicar = btns[3];
+//Pegar último resultado de loss e gain
+var parentElement = document.querySelector('div.last-results__item_1');//pega o último resultado de gain
+var childElement = parentElement.querySelector('div.last-results__item_inner');
+var loss = childElement.innerHTML;
+var parentElement = document.querySelector('div.last-results__item_2');//pega o último resultado de loss
+var childElement = parentElement.querySelector('div.last-results__item_inner');
+var gain = childElement.innerHTML;
+//O problema está sendo que a coelta fica estática, o melhor é achar uma forma de pegar pelo número central e maior que aparece na tela
+
+//Pegar último resutlado
+
+
+//btnMetade.click(); ação de clicar no botão que diminui a aposta pela metade
+//btnDuplicar.click(); ação de clicar no botão de duplicar a aposta
+//btnAposta.click(); ação de clicar no botão de aposta
+
 setInterval(function() {
+   
+  console.log(gain);
+  console.log(loss);
 
-  var btnAposta = document.querySelector(".btnBet");
-  var btns = document.getElementsByClassName("amount__btn");
-  var btnMetade = btns[2];
-  var btns = document.getElementsByClassName("amount__btn");
-  var btnDuplicar = btns[3];
-
-
-  btnMetade.click();
-  btnDuplicar.click();
-  btnAposta.click();
-  
 }, 5000);
