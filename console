@@ -1,0 +1,6 @@
+setInterval(function() {
+
+  var btn = document.querySelector(".btnBet");
+  btn.click();
+  
+}, 1000);
