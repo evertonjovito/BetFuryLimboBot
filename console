@@ -22,4 +22,4 @@ setInterval(async()=> {
     btnAposta.click();
   }
 
-}, 5000);//5000ms = 5 seg
+}, 1000);//1000ms = 5 seg
