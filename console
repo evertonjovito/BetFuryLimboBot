@@ -5,7 +5,7 @@ var btnMetade = btns[2];//btnMetade.click(); ação de clicar no botão que dimi
 var btns = document.getElementsByClassName("amount__btn");
 var btnDuplicar = btns[3];//btnDuplicar.click(); ação de clicar no botão de duplicar a aposta
 
-//Estratégia para o token BFG
+//Estratégia para o token BFG/BSW
 setInterval(async()=> {
   //Pega o último resultado
   var coeficientElement = document.querySelector('.coeficient');
@@ -21,7 +21,6 @@ setInterval(async()=> {
   }
 
   if(resultado<2.00){
-    btnDuplicar.click();
     btnDuplicar.click();
     btnAposta.click();
   }
